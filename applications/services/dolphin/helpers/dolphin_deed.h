@@ -63,6 +63,9 @@ typedef enum {
 
     DolphinDeedTestLeft,
     DolphinDeedTestRight,
+
+    DolphinDeedSetHorny,
+    DolphinDeedClearHorny,
 } DolphinDeed;
 
 typedef struct {

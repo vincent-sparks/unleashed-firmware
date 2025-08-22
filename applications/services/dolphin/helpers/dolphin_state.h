@@ -7,6 +7,7 @@
 
 typedef enum {
     DolphinFlagHappyMode = 1,
+    DolphinFlagHorny = 2,
 } DolphinFlags;
 
 typedef struct DolphinState DolphinState;

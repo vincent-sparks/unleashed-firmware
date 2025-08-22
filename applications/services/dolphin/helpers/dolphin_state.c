@@ -128,6 +128,10 @@ void dolphin_state_on_deed(DolphinState* dolphin_state, DolphinDeed deed) {
             if(dolphin_state->data.icounter < UINT32_MAX) dolphin_state->data.icounter++;
             dolphin_state->data.timestamp = dolphin_state_timestamp();
             dolphin_state->dirty = true;
+        } else if (deed == DolphinDeedSetHorny) {
+            dolphin_state->data.flags |= DolphinFlagHorny;
+        }else if (deed == DolphinDeedClearHorny) {
+            dolphin_state->data.flags &=~ DolphinFlagHorny;
         }
         return;
     }

@@ -238,6 +238,7 @@ static void dolphin_process_event(FuriEventLoopObject* object, void* context) {
         event.stats->level = dolphin_get_level(dolphin->state->data.icounter);
         event.stats->level_up_is_pending =
             !dolphin_state_xp_to_levelup(dolphin->state->data.icounter);
+        event.stats->is_horny = (dolphin->state->data.flags & DolphinFlagHorny) != 0;
 
     } else if(event.type == DolphinEventTypeFlush) {
         furi_event_loop_timer_start(dolphin->flush_timer, FLUSH_TIMEOUT_TICKS);

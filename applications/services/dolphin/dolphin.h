@@ -19,6 +19,7 @@ typedef struct {
     uint64_t timestamp;
     uint8_t level;
     bool level_up_is_pending;
+    bool is_horny;
 } DolphinStats;
 
 typedef struct {
